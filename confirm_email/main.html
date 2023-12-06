@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Verify Code</title>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          Codigo de verificação.
+        </div>
+        <div class="card-body">
+          <p>Verifique seu Email ou Celular, enviamos um codigo de 5 digitos para:</p>
+          <form>
+            <div class="form-group">
+              <label for="verificationCode">Código de Verificação:</label>
+              <input type="text" class="form-control" id="verificationCode" name="verificationCode" maxlength="5" pattern="\d{5}" title="Please enter a 5-digit code" required>
+            </div>
+            <div>
+                <button type="menu" class="btn btn-outline-primary">Não chegou? Clique aqui para enviar novamente.</button>
+            </div> <p></p>
+            <a href="confirmed.html" <button type="submit" class="btn btn-primary">Confirmar</button> </a>
+            <a href="../login.html" class="btn btn-link">Já tem uma conta? Clique aqui para Entrar.</a><p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
