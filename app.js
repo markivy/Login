@@ -1,22 +1,19 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const User = require("./models/Users");
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
-
-
-app.listen(port, () => {3000});
-//rota login
-
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/login.html');
+app.get("/", async (req, res) => {
+    res.send("Pagina Inicial");
 });
 
-app.post('/', (req, res) => {
-    const username = req.body.username;
-    const password = req.body.password;
+app.post("/cadastro", async (req, res) => {
+    res.send("Cadastro");
+});
 
 
-    res.send(`Username: ${username} Password: ${password}`);
+
+
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta ${port}`);
 });
